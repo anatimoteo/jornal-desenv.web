@@ -7,8 +7,6 @@
 :root {
     --darkblue: #012E40;
     --ocean: #024959;
-    --tiffanyblue: #026773;
-    --turquoise: #3CA6A6;
     --gray: #E0E1E0;
     --white: #ffffff;
     --content-font: 'Poppins', sans-serif;
@@ -26,20 +24,63 @@ body {
     background-color: var(--gray);
 }
 
-nav {
+header {
     background-color: var(--darkblue);
+    padding: 10px 0;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    align-items: center;
+    padding: 0 20px;
 }
+
+#logo img {
+    width: 100px;
+    height: auto;
+}
+
 
 ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-li {
+ul li {
     margin-right: 20px;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 5px;
+    border: 1px solid var(--white);
+    border-radius: 5px 0 0 5px;
+}
+
+.search button {
+    padding: 5px 10px;
+    background-color: var(--darkblue);
+    color: var(--gray);
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
 }
 
 a {
@@ -50,7 +91,7 @@ a {
 }
 
 a:hover {
-    color: var(--turquoise);
+    color: var(--ocean);
 }
 
 .search {
@@ -60,7 +101,7 @@ a:hover {
 
 input[type="text"] {
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--gray);
     border-radius: 3px;
 }
 
@@ -75,7 +116,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--turquoise);
+    background-color: var(--ocean);
 }
 
 
@@ -192,7 +233,7 @@ footer {
     background-color: var(--darkblue);
     color: var(--white);
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 
 }
 
@@ -320,3 +361,25 @@ footer {
 
 /*planeje*/
 
+.row-columnsPag4 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.column {
+    flex: 1;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title-pag4 {
+    font-size: 25px;
+    text-align: center;
+    margin: 50px 250px 20px 250px;
+    color: var(--darkblue);
+    text-decoration: none;
+}
