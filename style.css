@@ -36,14 +36,30 @@ nav {
     padding: 0 20px;
 }
 
-#logo img {
-    height: auto;
+#logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+#aviao {
+    animation-name: spin;
+    animation-duration: 9000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-bottom: 10px;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    
+    to{
+        transform: rotate(360deg);
+    }
+}
 
 ul {
     list-style: none;
@@ -378,11 +394,10 @@ footer {
     gap: 50px;
     padding: 30px;
     align-items: center;
-  }
+}
 
-  .column {
+.column {
     padding: 20px;
     border: 1px solid #ccc;
     text-align: justify;
-  }
-
+}
