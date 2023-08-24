@@ -335,8 +335,6 @@ footer {
     transform: scale(1.05);
 }
 
-
-
 /*parte 2*/
 
 .vertical-columns {
@@ -396,7 +394,7 @@ footer {
     align-items: center;
 }
 
-.column {
+.column4 {
     padding: 20px;
     border: 1px solid #ccc;
     text-align: justify;
