@@ -185,6 +185,7 @@ button:hover {
     margin: 20px;
 }
 
+
 .box {
     width: 350px;
     background-color: var(--white);
@@ -278,8 +279,6 @@ footer {
     text-decoration: none;
 }
 
-
-
 /*EXPERIENCIAS*/
 
 .row-columns {
@@ -317,11 +316,15 @@ footer {
     transform: scale(1.05);
 }
 
+
+
 /*parte 2*/
 
 .vertical-columns {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    align-content: center;
     gap: 20px;
     padding: 150px;
 }
@@ -339,7 +342,6 @@ footer {
     margin: 30px 250px -70px 250px;
     color: var(--darkblue);
     text-decoration: none;
-
 }
 
 /*planeje*/
@@ -368,19 +370,16 @@ footer {
 }
 
 .vertical-column4 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 50px;
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 30px;
+    align-items: center;
+  }
 
-.column {
-    width: 950px; /* Altere o valor conforme necessário */
-    background-color: #f4f4f4;
-    border-radius: 10px;
-}
-
-
+  .column {
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: justify;
+  }
 

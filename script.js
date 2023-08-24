@@ -33,7 +33,7 @@ function prevSlider() {
     showSlider()
 }
 
-btnNext.addEventListener('click', nextSlider)
+btnNext.addEventListener('click', (nextSlider))
 btnPrev.addEventListener('click', (prevSlider))
 
 console.log(slider)
